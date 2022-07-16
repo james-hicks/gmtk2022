@@ -481,8 +481,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473142890}
-  m_LocalRotation: {x: 0.15467636, y: -0.000000017008322, z: 0.0000000026600098, w: 0.9879652}
-  m_LocalPosition: {x: 0, y: 25.91, z: -20}
+  m_LocalRotation: {x: 0.15467638, y: 0.000000021249129, z: -0.0000000033267749, w: 0.9879652}
+  m_LocalPosition: {x: 0, y: 21.91, z: -20}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -499,27 +499,12 @@ PrefabInstance:
     - target: {fileID: 502441140025247426, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_FollowOffset.y
-      value: 11.4547
+      value: 2.375562
       objectReference: {fileID: 0}
     - target: {fileID: 502441140025247426, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_FollowOffset.z
-      value: -21.17763
-      objectReference: {fileID: 0}
-    - target: {fileID: 551328275658392945, guid: 246a0d6845a4ba849948c030f895fecb,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 551328275658392945, guid: 246a0d6845a4ba849948c030f895fecb,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 551328275658392945, guid: 246a0d6845a4ba849948c030f895fecb,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
+      value: -17.86146
       objectReference: {fileID: 0}
     - target: {fileID: 1256169635844449009, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
@@ -544,17 +529,22 @@ PrefabInstance:
     - target: {fileID: 1256169635844449009, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000008447955
+      value: -0.0000000084479606
       objectReference: {fileID: 0}
     - target: {fileID: 1256169635844449009, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000016269276
+      value: 0.0000000016269286
       objectReference: {fileID: 0}
     - target: {fileID: 1629316662931348001, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_Lens.m_SensorSize.x
-      value: 1.7769424
+      value: 1.7784091
+      objectReference: {fileID: 0}
+    - target: {fileID: 1934682322791490205, guid: 246a0d6845a4ba849948c030f895fecb,
+        type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 1.7784091
       objectReference: {fileID: 0}
     - target: {fileID: 2276265118306860175, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
@@ -564,12 +554,12 @@ PrefabInstance:
     - target: {fileID: 4101735921351587667, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_FollowOffset.y
-      value: 11.4547
+      value: 2.375562
       objectReference: {fileID: 0}
     - target: {fileID: 4101735921351587667, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_FollowOffset.z
-      value: -21.17763
+      value: -17.86146
       objectReference: {fileID: 0}
     - target: {fileID: 4586098187785810490, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
@@ -586,15 +576,20 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4816266262040642974, guid: 246a0d6845a4ba849948c030f895fecb,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -20
+      objectReference: {fileID: 0}
     - target: {fileID: 4952950905588801086, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_FollowOffset.y
-      value: 11.4547
+      value: 2.375562
       objectReference: {fileID: 0}
     - target: {fileID: 4952950905588801086, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_FollowOffset.z
-      value: -21.17763
+      value: -17.86146
       objectReference: {fileID: 0}
     - target: {fileID: 5187958867970884001, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
@@ -614,12 +609,12 @@ PrefabInstance:
     - target: {fileID: 5187958867970884001, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000016999305
+      value: 0.000000016999305
       objectReference: {fileID: 0}
     - target: {fileID: 5187958867970884001, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000026614202
+      value: -0.0000000026614202
       objectReference: {fileID: 0}
     - target: {fileID: 5779204472181439271, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
@@ -629,17 +624,17 @@ PrefabInstance:
     - target: {fileID: 5779204472181439271, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.1203921
+      value: 0.12039211
       objectReference: {fileID: 0}
     - target: {fileID: 5779204472181439271, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000017606927
+      value: 0.000000021351532
       objectReference: {fileID: 0}
     - target: {fileID: 5779204472181439271, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000002135266
+      value: -0.0000000025893903
       objectReference: {fileID: 0}
     - target: {fileID: 7144703073577485381, guid: 246a0d6845a4ba849948c030f895fecb,
         type: 3}
@@ -702,5 +697,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -2279113265267148931, guid: 188c505b9d33f5441b3ebe8bf4a063b6,
         type: 3}
+    - target: {fileID: 8695762824669163321, guid: 246a0d6845a4ba849948c030f895fecb,
+        type: 3}
+      propertyPath: m_Lens.m_SensorSize.x
+      value: 1.7784091
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 246a0d6845a4ba849948c030f895fecb, type: 3}
