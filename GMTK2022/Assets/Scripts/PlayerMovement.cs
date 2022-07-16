@@ -15,9 +15,16 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GroundCheck _groundCheck;
     [SerializeField] private float _jumpForce = 10f;
 
+    [Header("Dice")]
+    [SerializeField] private DiceSides[] _sides;
+    public bool CurrentSide { get; private set; }
+    public bool CanRoll { get; set; }
+
+
     private Rigidbody _rb;
     private Vector3 _moveInput;
     public bool _grounded;
+    private bool _hasControl = true;
 
     private bool _canJump = true;
     private float _jumpCD;
@@ -44,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
+        if (!_hasControl) return;
         if (!_grounded)
         {
             _moveSpeedMultiplier = 0.3f;
@@ -74,7 +82,11 @@ public class PlayerMovement : MonoBehaviour
 
     public void Roll()
     {
+        if (!CanRoll) return;
         Debug.Log("Roll");
+        _hasControl = false;
+        _rb.AddForce(Vector3.up * 7000);
+        StartCoroutine(Rolling());
     }
 
     private bool CheckGrounded()
@@ -96,5 +108,31 @@ public class PlayerMovement : MonoBehaviour
         }
         Skill = true;
         yield return null;
+    }
+
+    private IEnumerator Rolling()
+    {
+        yield return new WaitForSeconds(0.3f);
+        while(_rb.velocity.magnitude > 0.5)
+        {
+            //Debug.Log("Rolling");
+            yield return null;
+        }
+
+        foreach (var side in _sides)
+        {
+            if (side.OnGround)
+            {
+                Debug.Log(side.Side + " On Ground");
+                break;
+            }
+            else
+            {
+                Debug.Log(side.Side + "Not On Ground");
+            }
+
+        }
+        _hasControl = true;
+        Debug.Log("RolledxD");
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DiceSides : MonoBehaviour
 {
-    [SerializeField] private int _side;
+    public int Side;
     public bool OnGround;
 
     private void OnTriggerEnter(Collider other)

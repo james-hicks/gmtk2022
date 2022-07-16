@@ -10,12 +10,17 @@ public class CheckpointHandler : MonoBehaviour
 
     private void Start()
     {
-        _currentCheckpoint = _checkpoints[0];
+        if(_checkpoints[0] != null) _currentCheckpoint = _checkpoints[0];
     }
 
     private void Update()
     {
         if(_player.position.y < -20f)
+        {
+            ResetToCheckpoint();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             ResetToCheckpoint();
         }
