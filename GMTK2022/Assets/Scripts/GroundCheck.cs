@@ -15,6 +15,14 @@ public class GroundCheck : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Ground")
+        {
+            Grounded = true;
+        }
+    }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.tag == "Ground")
