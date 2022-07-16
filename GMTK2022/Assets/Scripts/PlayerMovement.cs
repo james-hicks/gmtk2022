@@ -8,14 +8,23 @@ using Cinemachine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
+    [Header("Roll")]
     [SerializeField] private float moveSpeed = 10f;
-    private Rigidbody rb;
-    private Vector3 MoveInput;
+
+    [Header("Jump")]
+    [SerializeField] private GroundCheck _groundCheck;
+    [SerializeField] private float _jumpForce = 10f;
+
+    private Rigidbody _rb;
+    private Vector3 _moveInput;
+    public bool _grounded;
+
+    private bool _canJump = true;
+    private float _jumpCD;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+        _rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -24,24 +33,57 @@ public class PlayerMovement : MonoBehaviour
         Move();
     }
 
+    private void Update()
+    {
+        _grounded = CheckGrounded();
+    }
+
 
     private void Move()
     {
-        rb.AddForce(MoveInput * moveSpeed);
+        if (!_grounded) return;
+        _rb.AddForce(_moveInput * moveSpeed);
     }
 
     public void SetMoveInput(Vector3 moveInput)
     {
-        MoveInput = moveInput;
+        _moveInput = moveInput;
     }
 
     public void Jump()
     {
-        Debug.Log("Jump");
+        if (CheckGrounded() && _canJump)
+        {
+            Debug.Log("Jump");
+            _rb.AddForce(Vector3.up * _jumpForce * 1000);
+            StartCoroutine(CoolDown(_jumpCD, _canJump));
+        }
+        
     }
 
     public void Roll()
     {
         Debug.Log("Roll");
+    }
+
+    private bool CheckGrounded()
+    {
+        if (_groundCheck.Grounded) return true;
+
+        return false;
+
+    }
+
+    private IEnumerator CoolDown(float coolDown, bool Skill)
+    {
+        Skill = false;
+        float cd = coolDown;
+        while(cd >= 0f)
+        {
+            cd -= Time.deltaTime;
+            yield return null;
+        }
+        Skill = true;
+        yield return null;
     }
 }
