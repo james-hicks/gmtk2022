@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Dice")]
     [SerializeField] private DiceSides[] _sides;
-    public bool CurrentSide { get; private set; }
+    public int CurrentSide { get; private set; }
     public bool CanRoll { get; set; }
 
 
@@ -86,6 +86,8 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Roll");
         _hasControl = false;
         _rb.AddForce(Vector3.up * 7000);
+        _rb.AddTorque(Vector3.forward * 2000);
+        _rb.AddTorque(Vector3.right * 2000);
         StartCoroutine(Rolling());
     }
 
@@ -113,26 +115,29 @@ public class PlayerMovement : MonoBehaviour
     private IEnumerator Rolling()
     {
         yield return new WaitForSeconds(0.3f);
-        while(_rb.velocity.magnitude > 0.5)
+        while(!_grounded)
         {
-            //Debug.Log("Rolling");
+            Debug.Log("Rolling");
+            yield return null;
+        }
+        while(_rb.velocity.magnitude > 0.3f)
+        {
+            Debug.Log("Still Rolling xD");
             yield return null;
         }
 
-        foreach (var side in _sides)
+        for (int i = 0; i < _sides.Length; i++)
         {
-            if (side.OnGround)
+            if (_sides[i].OnGround)
             {
-                Debug.Log(side.Side + " On Ground");
+                Debug.Log(_sides[i].Side + " On Ground");
+                CurrentSide = _sides[i].Side;
                 break;
             }
-            else
-            {
-                Debug.Log(side.Side + "Not On Ground");
-            }
-
         }
+
         _hasControl = true;
+        Debug.Log(_grounded);
         Debug.Log("RolledxD");
     }
 }
