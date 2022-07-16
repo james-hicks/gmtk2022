@@ -11,13 +11,13 @@ GameObject:
   - component: {fileID: 3252118331977895710}
   - component: {fileID: 7339463789709129009}
   - component: {fileID: 3107449263051464719}
-  - component: {fileID: 534901699093494858}
   - component: {fileID: 8019902316288292478}
   - component: {fileID: 612285555151923075}
   - component: {fileID: 6287271745209280548}
   - component: {fileID: 2125131420}
+  - component: {fileID: 8684564780305228292}
   m_Layer: 9
-  m_Name: TestDice
+  m_Name: D6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2360415568858887978}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: -2279113265267148931, guid: 188c505b9d33f5441b3ebe8bf4a063b6, type: 3}
 --- !u!23 &3107449263051464719
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -66,7 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 05a20ee729b82b8408505cfd43dcdfaf, type: 2}
+  - {fileID: 2100000, guid: cd61dc091a8f8784fa1b2f852d7ed845, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -88,19 +88,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &534901699093494858
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2360415568858887978}
-  m_Material: {fileID: 13400000, guid: d21f4245229b0374ba895be436104b69, type: 2}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &8019902316288292478
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -174,3 +161,17 @@ MonoBehaviour:
   m_DefaultActionMap: Gameplay
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!64 &8684564780305228292
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2360415568858887978}
+  m_Material: {fileID: 13400000, guid: d21f4245229b0374ba895be436104b69, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2279113265267148931, guid: 188c505b9d33f5441b3ebe8bf4a063b6, type: 3}
