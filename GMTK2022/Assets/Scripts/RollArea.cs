@@ -7,8 +7,8 @@ public class RollArea : MonoBehaviour
     [SerializeField] private float _requiredNumber;
     private PlayerMovement _playerMovement;
 
-    private float _playerNumber;
     private bool _readyToRoll;
+    private bool _doOnce = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -31,8 +31,12 @@ public class RollArea : MonoBehaviour
 
     private void Update()
     {
-        if (!_readyToRoll) return;
-        //_playerMovement
+        if (!_readyToRoll || _doOnce) return;
+        if(_playerMovement.CurrentSide == _requiredNumber)
+        {
+            _doOnce = true;
+            Debug.Log("YOU GOT THE RIGHT ROLL! :DDDDDDDDDDDDDDDDDDDDD");
+        }
     }
 
 }

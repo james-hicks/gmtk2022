@@ -136,6 +136,13 @@ MonoBehaviour:
   moveSpeed: 150
   _groundCheck: {fileID: 7318945221861747915}
   _jumpForce: 5
+  _sides:
+  - {fileID: 8455941641965899080}
+  - {fileID: 8549850933314355868}
+  - {fileID: 5444543701926123090}
+  - {fileID: 5363106787421672582}
+  - {fileID: 8128497527859246626}
+  - {fileID: 9174399910176426516}
   _grounded: 0
 --- !u!114 &2125131420
 MonoBehaviour:
@@ -255,7 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115add57b494d8d4c873fd9ff8b8288b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _side: 5
+  Side: 5
   OnGround: 0
 --- !u!1 &3890016796636765192
 GameObject:
@@ -315,7 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115add57b494d8d4c873fd9ff8b8288b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _side: 1
+  Side: 1
   OnGround: 0
 --- !u!1 &3927077721399280511
 GameObject:
@@ -375,7 +382,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115add57b494d8d4c873fd9ff8b8288b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _side: 2
+  Side: 2
   OnGround: 0
 --- !u!1 &3956756384482835394
 GameObject:
@@ -531,7 +538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115add57b494d8d4c873fd9ff8b8288b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _side: 6
+  Side: 6
   OnGround: 0
 --- !u!1 &7820291108851128478
 GameObject:
@@ -591,7 +598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115add57b494d8d4c873fd9ff8b8288b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _side: 3
+  Side: 3
   OnGround: 0
 --- !u!1 &8698720066862390833
 GameObject:
@@ -651,7 +658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 115add57b494d8d4c873fd9ff8b8288b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _side: 4
+  Side: 4
   OnGround: 0
 --- !u!1001 &4798681835752022072
 PrefabInstance:

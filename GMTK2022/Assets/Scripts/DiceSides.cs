@@ -9,7 +9,7 @@ public class DiceSides : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "SideCheck")
+        if(other.tag == "Ground")
         {
             OnGround = true;
         }
@@ -17,7 +17,7 @@ public class DiceSides : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if(other.tag == "SideCheck")
+        if(other.tag == "Ground")
         {
             OnGround = false;
         }
