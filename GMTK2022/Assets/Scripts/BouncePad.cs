@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BouncePad : MonoBehaviour
 {
+    [SerializeField] private Animator _anim;
     private float _coolDown = 0.5f;
     private float _cd;
     private Rigidbody _rb;
@@ -16,6 +17,7 @@ public class BouncePad : MonoBehaviour
             _rb = other.GetComponent<Rigidbody>();
             _rb.AddForce(Vector3.up * 5000);
             _cd = _coolDown;
+            _anim.SetTrigger("Bounce");
         }
     }
 
