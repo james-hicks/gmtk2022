@@ -401,7 +401,7 @@ MonoBehaviour:
   m_Roots: []
   m_UpdateRate: 60
   m_UpdateMode: 3
-  m_Damping: 0.2
+  m_Damping: 0.4
   m_DampingDistrib:
     serializedVersion: 2
     m_Curve: []
