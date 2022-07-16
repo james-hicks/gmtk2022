@@ -46,9 +46,9 @@ GameObject:
   - component: {fileID: 2223226517378372365}
   - component: {fileID: 1217739536728136354}
   - component: {fileID: 7949897875701750339}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BouncePad
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,6 +155,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Cardboard_jumpad
+      objectReference: {fileID: 0}
+    - target: {fileID: 7077746900959399794, guid: 597ad98bf2732f04da41cd342198650a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7077746900959399794, guid: 597ad98bf2732f04da41cd342198650a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
       objectReference: {fileID: 0}
     - target: {fileID: 7598388280345679304, guid: 597ad98bf2732f04da41cd342198650a,
         type: 3}
