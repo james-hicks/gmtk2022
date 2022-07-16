@@ -2,24 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GroundCheck : MonoBehaviour
+public class DiceSides : MonoBehaviour
 {
-    private SphereCollider _collider;
-    public bool Grounded;
+    [SerializeField] private int _side;
+    public bool OnGround;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Ground")
+        if(other.tag == "SideCheck")
         {
-            Grounded = true;
+            OnGround = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Ground")
+        if(other.tag == "SideCheck")
         {
-            Grounded = false;
+            OnGround = false;
         }
     }
 }
+
