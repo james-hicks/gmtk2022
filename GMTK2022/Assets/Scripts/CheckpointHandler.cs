@@ -15,7 +15,7 @@ public class CheckpointHandler : MonoBehaviour
 
     private void Update()
     {
-        if(_player.position.y < -10f)
+        if(_player.position.y < -20f)
         {
             ResetToCheckpoint();
         }
