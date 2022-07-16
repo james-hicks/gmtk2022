@@ -3,7 +3,12 @@ guid: 988e9bd5420aa1c42a26bad371ff1775
 ModelImporter:
   serializedVersion: 21202
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: hamster
+    second: {fileID: 2100000, guid: b8b0a625283882b4482724beb71b4d45, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -16,8 +21,7 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
-      human bone 'LeftHand' not found\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
