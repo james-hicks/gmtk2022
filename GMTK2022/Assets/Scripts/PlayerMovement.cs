@@ -22,8 +22,11 @@ public class PlayerMovement : MonoBehaviour
     private bool _canJump = true;
     private float _jumpCD;
 
+    private float _moveSpeedMultiplier;
+
     private void Awake()
     {
+        Physics.IgnoreLayerCollision(7, 9);
         _rb = GetComponent<Rigidbody>();
     }
 
@@ -41,8 +44,16 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        if (!_grounded) return;
-        _rb.AddForce(_moveInput * moveSpeed);
+        if (!_grounded)
+        {
+            _moveSpeedMultiplier = 0.3f;
+        }
+        else
+        {
+            _moveSpeedMultiplier = 1f;
+        }
+
+        _rb.AddForce(_moveInput * moveSpeed * _moveSpeedMultiplier);
     }
 
     public void SetMoveInput(Vector3 moveInput)
@@ -52,12 +63,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump()
     {
-        if (CheckGrounded() && _canJump)
+        /*if (CheckGrounded() && _canJump)
         {
             Debug.Log("Jump");
             _rb.AddForce(Vector3.up * _jumpForce * 1000);
             StartCoroutine(CoolDown(_jumpCD, _canJump));
-        }
+        }*/
         
     }
 
