@@ -15,7 +15,7 @@ public class BouncePad : MonoBehaviour
         {
             Debug.Log("bounce");
             _rb = other.GetComponent<Rigidbody>();
-            _rb.AddForce(Vector3.up * 6000);
+            _rb.AddForce(Vector3.up * 5000);
             _cd = _coolDown;
             _anim.SetTrigger("Bounce");
         }

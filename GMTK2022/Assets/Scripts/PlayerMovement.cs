@@ -140,4 +140,9 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log(_grounded);
         Debug.Log("RolledxD");
     }
+
+    public void SetCanMove(bool a)
+    {
+        _hasControl = a;
+    }
 }
