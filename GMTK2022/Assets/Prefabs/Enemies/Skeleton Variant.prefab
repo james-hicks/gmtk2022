@@ -104,22 +104,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6f37286a3f6519c40bee34e6351951ea,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 48.021137
+      value: -163.10567
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6f37286a3f6519c40bee34e6351951ea,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 115.92
+      value: 74.151085
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6f37286a3f6519c40bee34e6351951ea,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 188.24857
+      value: 129.10423
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6f37286a3f6519c40bee34e6351951ea,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9778572
+      value: 0.54460967
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6f37286a3f6519c40bee34e6351951ea,
         type: 3}
@@ -129,7 +129,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6f37286a3f6519c40bee34e6351951ea,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.20927359
+      value: 0.8386897
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6f37286a3f6519c40bee34e6351951ea,
         type: 3}
@@ -144,7 +144,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6f37286a3f6519c40bee34e6351951ea,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 24.16
+      value: 114.004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6f37286a3f6519c40bee34e6351951ea,
         type: 3}
@@ -182,7 +182,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -232,4 +232,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 104acaa152dbb564992198c8bd73436e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Thrust: 1000
+  m_Thrust: 100
+--- !u!114 &1692166032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8897068932590989590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -975643782
+      Data2: 1259110361
+      Data3: 537515651
+      Data4: -1285618339
+    Path: event:/ArrowHit
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &1692166033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8897068932590989590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99655ecfa11a0b64f8b2c973d4040f63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventEmitter: {fileID: 1692166032}
+  OnSoundEffectPlay:
+    m_PersistentCalls:
+      m_Calls: []
