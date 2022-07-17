@@ -116,6 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _currentDice: {fileID: 0}
   _newDice: {fileID: 0}
+  eventEmitter: {fileID: 0}
   _playerCam: {fileID: 0}
 --- !u!1001 &2625582630437304042
 PrefabInstance:

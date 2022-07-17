@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2255156987491323396}
   - component: {fileID: 5103843904490430086}
   - component: {fileID: 2512952458399195328}
+  - component: {fileID: 8146291900654952921}
   m_Layer: 0
   m_Name: RollTrigger
   m_TagString: Untagged
@@ -111,9 +112,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _requiredNumber: 0
+  _newCam: {fileID: 0}
+  _BumpZone: {fileID: 0}
   OnCorrectRoll:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &8146291900654952921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4453700017116047037}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -1996668569
+      Data2: 1094337846
+      Data3: 1534782387
+      Data4: -1165859823
+    Path: event:/Sucess
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &6495427781400869318
 GameObject:
   m_ObjectHideFlags: 0
