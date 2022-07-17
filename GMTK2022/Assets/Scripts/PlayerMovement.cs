@@ -164,14 +164,14 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("Unpause");
             Time.timeScale = 1f;
-            _pauseMenu.SetTrigger("Pause");
+            if(_pauseMenu != null) _pauseMenu.SetTrigger("Pause");
             _gameIsPaused = false;
         }
         if (!_gameIsPaused)
         {
             Debug.Log("Pause");
             Time.timeScale = 0f;
-            _pauseMenu.SetTrigger("Pause");
+            if (_pauseMenu != null) _pauseMenu.SetTrigger("Pause");
             _gameIsPaused = true;
         }
 
