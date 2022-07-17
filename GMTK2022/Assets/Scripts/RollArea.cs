@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class RollArea : MonoBehaviour
 {
     [SerializeField] private float _requiredNumber;
+
+    public UnityEvent OnCorrectRoll;
+
     private PlayerMovement _playerMovement;
 
     private bool _readyToRoll;
@@ -35,6 +39,7 @@ public class RollArea : MonoBehaviour
         if(_playerMovement.CurrentSide == _requiredNumber)
         {
             _doOnce = true;
+            OnCorrectRoll.Invoke();
             Debug.Log("YOU GOT THE RIGHT ROLL! :DDDDDDDDDDDDDDDDDDDDD");
         }
     }
