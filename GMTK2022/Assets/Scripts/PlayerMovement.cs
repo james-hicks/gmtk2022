@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using Cinemachine;
+using FMODUnity;
 #pragma warning disable 649
 #pragma warning disable 414
 
@@ -15,11 +16,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GroundCheck _groundCheck;
     [SerializeField] private float _jumpForce = 10f;
 
+
     [Header("Dice")]
     [SerializeField] private DiceSides[] _sides;
     public int CurrentSide = -1;
     public bool CanRoll { get; set; }
 
+    [Header("Audio")]
+    [SerializeField] private FMODUnity.StudioEventEmitter eventEmitter;
 
     private Rigidbody _rb;
     private Vector3 _moveInput;
@@ -47,7 +51,13 @@ public class PlayerMovement : MonoBehaviour
     {
         _grounded = CheckGrounded();
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Ground")
+        {
+            if (eventEmitter != null) eventEmitter.SendMessage("Play");
+        }
+    }
 
     private void Move()
     {
