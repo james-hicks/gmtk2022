@@ -54,6 +54,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4029
+--- !u!114 &-6971159676971205160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Boing
+  m_EditorClassIdentifier: 
+  Path: event:/Boing
+  Guid:
+    Data1: 923208363
+    Data2: 1306342539
+    Data3: 509843130
+    Data4: -2122565332
+  Banks:
+  - {fileID: -418126070941500023}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1464
 --- !u!114 &-5470472833158096854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,10 +150,10 @@ MonoBehaviour:
   Path: FMOD/GMTK/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637936118135125016
+  lastModified: 637936149664133766
   FileSizes:
   - Name: Desktop
-    Value: 524640
+    Value: 545728
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -149,12 +176,13 @@ MonoBehaviour:
   - {fileID: -8400911364068165869}
   - {fileID: -8297147646262911222}
   - {fileID: -2283420146881044736}
+  - {fileID: -6971159676971205160}
   EditorParameters: []
   MasterBanks:
   - {fileID: -418126070941500023}
   StringsBanks:
   - {fileID: 7047187626446043600}
-  cacheTime: 637936118135144863
+  cacheTime: 637936149664148638
   cacheVersion: 131591
 --- !u!114 &7047187626446043600
 MonoBehaviour:
@@ -171,10 +199,10 @@ MonoBehaviour:
   Path: FMOD/GMTK/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637936118135144863
+  lastModified: 637936149664148638
   FileSizes:
   - Name: Desktop
-    Value: 966
+    Value: 1002
   Exists: 1
 --- !u!114 &8185982251220971510
 MonoBehaviour:
