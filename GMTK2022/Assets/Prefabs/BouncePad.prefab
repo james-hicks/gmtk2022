@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 2223226517378372365}
   - component: {fileID: 1217739536728136354}
   - component: {fileID: 7949897875701750339}
+  - component: {fileID: 6285781774950122970}
   m_Layer: 6
   m_Name: BouncePad
   m_TagString: Ground
@@ -144,6 +145,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _anim: {fileID: 4748508282204213027}
+  _forceMultiplier: 1
+  eventEmitter: {fileID: 6285781774950122970}
+--- !u!114 &6285781774950122970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7025142368565705549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 923208363
+      Data2: 1306342539
+      Data3: 509843130
+      Data4: -2122565332
+    Path: event:/Boing
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &4981796969238855059
 PrefabInstance:
   m_ObjectHideFlags: 0

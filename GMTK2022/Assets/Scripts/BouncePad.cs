@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class BouncePad : MonoBehaviour
 {
     [SerializeField] private Animator _anim;
     [SerializeField] private float _forceMultiplier = 1f;
+    [SerializeField] private FMODUnity.StudioEventEmitter eventEmitter;
     private float _coolDown = 0.5f;
     private float _cd;
     private Rigidbody _rb;
@@ -28,6 +30,7 @@ public class BouncePad : MonoBehaviour
             
             _cd = _coolDown;
             _anim.SetTrigger("Bounce");
+            if (eventEmitter != null) eventEmitter.SendMessage("Play");
         }
     }
 
