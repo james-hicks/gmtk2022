@@ -321,3 +321,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Thrust: 200
+--- !u!114 &6847251638950575752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5473063477231847989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: -975643782
+      Data2: 1259110361
+      Data3: 537515651
+      Data4: -1285618339
+    Path: event:/ArrowHit
+  Event: 
+  PlayEvent: 0
+  StopEvent: 0
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
+--- !u!114 &8171676356291303080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5473063477231847989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99655ecfa11a0b64f8b2c973d4040f63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventEmitter: {fileID: 6847251638950575752}
+  OnSoundEffectPlay:
+    m_PersistentCalls:
+      m_Calls: []
