@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{fc560159-ab6d-4421-84a6-0890a8c263fa}">
+		<property name="note">
+			<value>file:///Z:/REPOS/GMTK2022/GMTK2022/FMOD/GMTK/Assets/zapsplat_foley_crutches_on_wooden_floor_single_step_004_31220 - Trimmed.wav</value>
+		</property>
+		<property name="assetPath">
+			<value>zapsplat_foley_crutches_on_wooden_floor_single_step_004_31220 - Trimmed.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.72597916666666662</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8b7fd40f-db26-4805-946f-b29d02acc519}</destination>
+		</relationship>
+	</object>
+</objects>

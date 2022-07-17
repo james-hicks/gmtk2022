@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{016a01e6-43ff-4b3e-9fb0-2b002cada707}">
+		<property name="assetPath">
+			<value>zapsplat_leisure_board_game_dice_throw_roll_on_playing_board_001_37257.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.1519999999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8b7fd40f-db26-4805-946f-b29d02acc519}</destination>
+		</relationship>
+	</object>
+</objects>
