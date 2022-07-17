@@ -145,6 +145,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Debug.Log(_sides[i].Side + " On Ground");
                 CurrentSide = _sides[i].Side;
+                StartCoroutine(ResetNumber());
                 break;
             }
         }
@@ -164,6 +165,7 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("Unpause");
             Time.timeScale = 1f;
+            Cursor.lockState = CursorLockMode.Locked;
             if(_pauseMenu != null) _pauseMenu.SetTrigger("Pause");
             _gameIsPaused = false;
         }
@@ -171,10 +173,27 @@ public class PlayerMovement : MonoBehaviour
         {
             Debug.Log("Pause");
             Time.timeScale = 0f;
+            Cursor.lockState = CursorLockMode.None;
             if (_pauseMenu != null) _pauseMenu.SetTrigger("Pause");
             _gameIsPaused = true;
         }
+    }
 
+    public void UnPause()
+    {
+        if (_gameIsPaused)
+        {
+            Debug.Log("Unpause");
+            Time.timeScale = 1f;
+            Cursor.lockState = CursorLockMode.Locked;
+            if (_pauseMenu != null) _pauseMenu.SetTrigger("Pause");
+            _gameIsPaused = false;
+        }
+    }
 
+    private IEnumerator ResetNumber()
+    {
+        yield return new WaitForSeconds(1f);
+        CurrentSide = -1;
     }
 }

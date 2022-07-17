@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.08031692, g: 0.09971312, b: 0.30112448, a: 1}
+  m_IndirectSpecularColor: {r: 0.08035206, g: 0.09974979, b: 0.3011613, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1879,8 +1879,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1407341454}
   - component: {fileID: 1407341453}
-  - component: {fileID: 1407341452}
   - component: {fileID: 1407341455}
+  - component: {fileID: 1407341456}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1888,14 +1888,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1407341452
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407341451}
-  m_Enabled: 1
 --- !u!20 &1407341453
 Camera:
   m_ObjectHideFlags: 0
@@ -1987,12 +1979,94 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1407341456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407341451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
 --- !u!4 &1536437731 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2889125622001630417, guid: 9618c014d880f3f4a8c1b6d1f88a1dff,
     type: 3}
   m_PrefabInstance: {fileID: 54552653}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1562854810
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 361838756001425506, guid: 7a5f837804bace94687c11b19f0e2cb1,
+        type: 3}
+      propertyPath: m_Name
+      value: = FMOD audiomanager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911669221029088315, guid: 7a5f837804bace94687c11b19f0e2cb1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911669221029088315, guid: 7a5f837804bace94687c11b19f0e2cb1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -106.90012
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911669221029088315, guid: 7a5f837804bace94687c11b19f0e2cb1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 79.13392
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911669221029088315, guid: 7a5f837804bace94687c11b19f0e2cb1,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 55.850937
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911669221029088315, guid: 7a5f837804bace94687c11b19f0e2cb1,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911669221029088315, guid: 7a5f837804bace94687c11b19f0e2cb1,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911669221029088315, guid: 7a5f837804bace94687c11b19f0e2cb1,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911669221029088315, guid: 7a5f837804bace94687c11b19f0e2cb1,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911669221029088315, guid: 7a5f837804bace94687c11b19f0e2cb1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911669221029088315, guid: 7a5f837804bace94687c11b19f0e2cb1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911669221029088315, guid: 7a5f837804bace94687c11b19f0e2cb1,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a5f837804bace94687c11b19f0e2cb1, type: 3}
 --- !u!4 &1567828753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7983779773688996436, guid: ad85aba57701a4e4d93793788cff0077,
