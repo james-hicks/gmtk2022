@@ -36,7 +36,7 @@ public class RollArea : MonoBehaviour
     private void Update()
     {
         if (!_readyToRoll || _doOnce) return;
-        if(_playerMovement.CurrentSide == _requiredNumber)
+        if(_playerMovement.CurrentSide >= _requiredNumber)
         {
             _doOnce = true;
             OnCorrectRoll.Invoke();
