@@ -11,7 +11,7 @@ public class RollArea : MonoBehaviour
     [SerializeField] private GameObject _BumpZone;
     public DamageNumber numberDmgPrefab;
     public DamageNumber numberCritPrefab;
-
+    public DamageNumber numberFailPrefab;
 
     public UnityEvent OnCorrectRoll;
 
@@ -46,39 +46,40 @@ public class RollArea : MonoBehaviour
         if(_playerMovement.CurrentSide == 1)
         {
             Debug.Log("Critical Fail");
+            DamageNumber damageNumber = numberFailPrefab.Spawn(_playerMovement.transform.position);
             StartCoroutine(BumpZone());
         }
         else if (_requiredNumber == 4 && _playerMovement.CurrentSide == 6)
         {
             Debug.Log("Critical Roll!");
             OnCorrectRoll.Invoke();
-            DamageNumber damageNumber = numberCritPrefab.Spawn(transform.position);
+            DamageNumber damageNumber = numberCritPrefab.Spawn(_playerMovement.transform.position);
             _doOnce = true;
 
         } else if(_requiredNumber == 6 && _playerMovement.CurrentSide == 8)
         {
             Debug.Log("Critical Roll!");
             OnCorrectRoll.Invoke();
-            DamageNumber damageNumber = numberCritPrefab.Spawn(transform.position);
+            DamageNumber damageNumber = numberCritPrefab.Spawn(_playerMovement.transform.position);
             _doOnce = true;
         } else if (_requiredNumber == 8 && _playerMovement.CurrentSide == 10)
         {
             Debug.Log("Critical Roll!");
             OnCorrectRoll.Invoke();
-            DamageNumber damageNumber = numberCritPrefab.Spawn(transform.position);
+            DamageNumber damageNumber = numberCritPrefab.Spawn(_playerMovement.transform.position);
             _doOnce = true;
         } else if(_requiredNumber == 20 && _playerMovement.CurrentSide == 20)
         {
             Debug.Log("Critical Roll!");
             OnCorrectRoll.Invoke();
-            DamageNumber damageNumber = numberCritPrefab.Spawn(transform.position);
+            DamageNumber damageNumber = numberCritPrefab.Spawn(_playerMovement.transform.position);
             _doOnce = true;
         }
         else if (_playerMovement.CurrentSide >= _requiredNumber)
         {
             _doOnce = true;
             OnCorrectRoll.Invoke();
-            DamageNumber damageNumber = numberDmgPrefab.Spawn(transform.position,_playerMovement.CurrentSide);
+            DamageNumber damageNumber = numberDmgPrefab.Spawn(_playerMovement.transform.position, _playerMovement.CurrentSide);
             Debug.Log("YOU GOT THE RIGHT ROLL! :DDDDDDDDDDDDDDDDDDDDD");
         }
     }
