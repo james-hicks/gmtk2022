@@ -15,6 +15,9 @@ public class RollArea : MonoBehaviour
 
     public UnityEvent OnCorrectRoll;
 
+    public UnityEvent OnEnter;
+    public UnityEvent OnExit;
+
     private PlayerMovement _playerMovement;
 
     private bool _readyToRoll;
@@ -25,6 +28,7 @@ public class RollArea : MonoBehaviour
         if(other.tag == "Player")
         {
             _readyToRoll = true;
+            OnEnter.Invoke();
             other.GetComponent<PlayerMovement>().CanRoll = true;
             _playerMovement = other.GetComponent<PlayerMovement>();
         }
@@ -35,6 +39,7 @@ public class RollArea : MonoBehaviour
         if(other.tag == "Player")
         {
             _readyToRoll = false;
+            OnExit.Invoke();
             other.GetComponent<PlayerMovement>().CanRoll = false;
         }
     }
