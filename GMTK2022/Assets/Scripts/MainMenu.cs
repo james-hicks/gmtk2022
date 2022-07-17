@@ -20,7 +20,9 @@ public class MainMenu : MonoBehaviour
 
     public void Menu()
     {
+        Time.timeScale = 1f;
         Debug.Log("Main Menu");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
+
 }
