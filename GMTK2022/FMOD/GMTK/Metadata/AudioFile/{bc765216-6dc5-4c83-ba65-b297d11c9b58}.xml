@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{bc765216-6dc5-4c83-ba65-b297d11c9b58}">
+		<property name="assetPath">
+			<value>boing1.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.464</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{8b7fd40f-db26-4805-946f-b29d02acc519}</destination>
+		</relationship>
+	</object>
+</objects>
