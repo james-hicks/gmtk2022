@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: -2048413837978307231}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
@@ -96,10 +96,10 @@ MonoBehaviour:
   Path: FMOD/GMTK/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637936447850111981
+  lastModified: 637936157314697097
   FileSizes:
   - Name: Desktop
-    Value: 1080
+    Value: 1002
   Exists: 1
 --- !u!114 &-6971159676971205160
 MonoBehaviour:
@@ -224,10 +224,10 @@ MonoBehaviour:
   Path: FMOD/GMTK/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637936447850097103
+  lastModified: 637936157314516935
   FileSizes:
   - Name: Desktop
-    Value: 624480
+    Value: 545728
   Exists: 1
 --- !u!114 &-824461674153734543
 MonoBehaviour:
@@ -256,33 +256,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1464
---- !u!114 &-455571414285402478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/winbattle
-  m_EditorClassIdentifier: 
-  Path: event:/winbattle
-  Guid:
-    Data1: 175657261
-    Data2: 1256403832
-    Data3: -1803343987
-    Data4: 2065906516
-  Banks:
-  - {fileID: -2048413837978307231}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 3504
 --- !u!114 &-418126070941500023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -325,14 +298,12 @@ MonoBehaviour:
   - {fileID: -824461674153734543}
   - {fileID: 7297947540810848307}
   - {fileID: 3727004514346357982}
-  - {fileID: 7326956754890829568}
-  - {fileID: -455571414285402478}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2048413837978307231}
   StringsBanks:
   - {fileID: -7429958301321940052}
-  cacheTime: 637936447850111981
+  cacheTime: 637936157314697097
   cacheVersion: 131591
 --- !u!114 &3727004514346357982
 MonoBehaviour:
@@ -387,7 +358,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 635
+  Length: 500
 --- !u!114 &7047187626446043600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -435,33 +406,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 170
---- !u!114 &7326956754890829568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/rolldice
-  m_EditorClassIdentifier: 
-  Path: event:/rolldice
-  Guid:
-    Data1: -1014358707
-    Data2: 1319260023
-    Data3: -2042489461
-    Data4: 203062586
-  Banks:
-  - {fileID: -2048413837978307231}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1152
 --- !u!114 &8185982251220971510
 MonoBehaviour:
   m_ObjectHideFlags: 0
