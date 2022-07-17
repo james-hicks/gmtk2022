@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Audio")]
     [SerializeField] private FMODUnity.StudioEventEmitter eventEmitter;
+    [SerializeField] private FMODUnity.StudioEventEmitter rollEmitter;
+
 
     [Header("UI")]
     [SerializeField] private Animator _pauseMenu;
@@ -108,6 +110,7 @@ public class PlayerMovement : MonoBehaviour
         _rb.AddTorque(Vector3.forward * Random.Range(1750f, 2600f));
         _rb.AddTorque(Vector3.right * Random.Range(1750f, 2600f));
         StartCoroutine(Rolling());
+        if (eventEmitter != null) rollEmitter.SendMessage("Play");
     }
 
     private bool CheckGrounded()
