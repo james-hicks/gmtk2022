@@ -34,6 +34,11 @@ public class PlayerController : MonoBehaviour
         _playerMovement?.Roll();
     }
 
+    public void OnPause(InputValue value)
+    {
+        _playerMovement?.Pause();
+    }
+
     public void Update()
     {
         if (_playerMovement == null) return;
