@@ -25,6 +25,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Audio")]
     [SerializeField] private FMODUnity.StudioEventEmitter eventEmitter;
 
+    [Header("UI")]
+    [SerializeField] private Animator _pauseMenu;
+
     private Rigidbody _rb;
     private Vector3 _moveInput;
     public bool _grounded;
@@ -34,6 +37,8 @@ public class PlayerMovement : MonoBehaviour
     private float _jumpCD;
 
     private float _moveSpeedMultiplier;
+
+    public bool _gameIsPaused = false;
 
     private void Awake()
     {
@@ -127,12 +132,10 @@ public class PlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         while(!_grounded)
         {
-            Debug.Log("Rolling");
             yield return null;
         }
         while(_rb.velocity.magnitude > 0.3f)
         {
-            Debug.Log("Still Rolling xD");
             yield return null;
         }
 
@@ -147,12 +150,31 @@ public class PlayerMovement : MonoBehaviour
         }
 
         _hasControl = true;
-        Debug.Log(_grounded);
-        Debug.Log("RolledxD");
     }
 
     public void SetCanMove(bool a)
     {
         _hasControl = a;
+    }
+
+    public void Pause()
+    {
+
+        if (_gameIsPaused)
+        {
+            Debug.Log("Unpause");
+            Time.timeScale = 1f;
+            _pauseMenu.SetTrigger("Pause");
+            _gameIsPaused = false;
+        }
+        if (!_gameIsPaused)
+        {
+            Debug.Log("Pause");
+            Time.timeScale = 0f;
+            _pauseMenu.SetTrigger("Pause");
+            _gameIsPaused = true;
+        }
+
+
     }
 }
