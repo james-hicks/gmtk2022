@@ -233,7 +233,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7765667, y: 1}
+    m_SensorSize: {x: 1.7771739, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -563,7 +563,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7765667, y: 1}
+    m_SensorSize: {x: 1.7771739, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -752,7 +752,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7765667, y: 1}
+    m_SensorSize: {x: 1.7771739, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -830,7 +830,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7765667, y: 1}
+    m_SensorSize: {x: 1.7771739, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1251,6 +1251,11 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 0.0000001
       objectReference: {fileID: 0}
+    - target: {fileID: 6287271745209280548, guid: 3877e4f61d88e014ab05779bc67d6086,
+        type: 3}
+      propertyPath: eventEmitter
+      value: 
+      objectReference: {fileID: 6697370569429757579}
     - target: {fileID: 6432794696172465371, guid: 3877e4f61d88e014ab05779bc67d6086,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
@@ -1313,6 +1318,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3877e4f61d88e014ab05779bc67d6086, type: 3}
+--- !u!114 &6697370569429757579 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1993294568427446945, guid: 3877e4f61d88e014ab05779bc67d6086,
+    type: 3}
+  m_PrefabInstance: {fileID: 5140944552467713066}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &7672328029166977844 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3252118331977895710, guid: 3877e4f61d88e014ab05779bc67d6086,
