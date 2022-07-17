@@ -21,7 +21,7 @@ public class BouncePad : MonoBehaviour
             if (_forceMultiplier > 1f)
             {
                 _rb.AddForce(Vector3.up * 5000*_forceMultiplier);
-                _rb.AddForce(Vector3.forward * 5000*_forceMultiplier);
+                _rb.AddForce(Vector3.back * 5000*_forceMultiplier);
             }
             else
             {
