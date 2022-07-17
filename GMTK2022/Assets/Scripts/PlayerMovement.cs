@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using Cinemachine;
 using FMODUnity;
+using DamageNumbersPro;
 #pragma warning disable 649
 #pragma warning disable 414
 
@@ -27,6 +28,9 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("UI")]
     [SerializeField] private Animator _pauseMenu;
+
+    [Header("Damage Number")]
+    public DamageNumber numberDmgPrefab;
 
     private Rigidbody _rb;
     private Vector3 _moveInput;
@@ -145,6 +149,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Debug.Log(_sides[i].Side + " On Ground");
                 CurrentSide = _sides[i].Side;
+                DamageNumber damageNumber = numberDmgPrefab.Spawn(transform.position, CurrentSide);
                 StartCoroutine(ResetNumber());
                 break;
             }

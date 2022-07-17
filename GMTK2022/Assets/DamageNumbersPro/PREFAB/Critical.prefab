@@ -53,7 +53,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3373603598322536305, guid: cf4f37abd4e7e724da3b2662b9787068, type: 2}
+  - {fileID: 5276284244843499962, guid: 042cc6b3bab28e143b3e278e2fb63f12, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -100,7 +100,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4099347062576028520
 RectTransform:
   m_ObjectHideFlags: 0
@@ -141,7 +141,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3373603598322536305, guid: cf4f37abd4e7e724da3b2662b9787068, type: 2}
+  - {fileID: 5276284244843499962, guid: 042cc6b3bab28e143b3e278e2fb63f12, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -183,18 +183,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CRITCAL
+  m_text: <space=0.2em>CRITICAL<space=0.2em>
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: cf4f37abd4e7e724da3b2662b9787068, type: 2}
-  m_sharedMaterial: {fileID: 3373603598322536305, guid: cf4f37abd4e7e724da3b2662b9787068,
+  m_fontAsset: {fileID: 11400000, guid: 042cc6b3bab28e143b3e278e2fb63f12, type: 2}
+  m_sharedMaterial: {fileID: 5276284244843499962, guid: 042cc6b3bab28e143b3e278e2fb63f12,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4282171135
-  m_fontColor: {r: 1, g: 0.74666685, b: 0.2352941, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -211,8 +211,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -244,7 +244,7 @@ MonoBehaviour:
   m_uvLineOffset: 0
   m_geometrySortingOrder: 0
   m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
+  m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
   m_margin: {x: 0, y: 0, z: 0, w: 0}
@@ -283,7 +283,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4099347062908700086}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -113.67646, y: 74.922, z: 129.65558}
+  m_LocalPosition: {x: 28, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   permanent: 0
-  lifetime: 4
+  lifetime: 3
   unscaledTime: 0
   enable3DGame: 1
   faceCameraView: 1
@@ -320,7 +320,7 @@ MonoBehaviour:
     farScale: 0.5
   cameraOverride: {fileID: 0}
   enableNumber: 0
-  number: 123
+  number: 50
   numberSettings:
     bold: 0
     italic: 0
@@ -350,7 +350,7 @@ MonoBehaviour:
     suffixDigits: 030000000300000003000000
     maxDigits: 4
   enableLeftText: 1
-  leftText: CRITCAL
+  leftText: CRITICAL
   leftTextSettings:
     bold: 0
     italic: 0
@@ -361,7 +361,7 @@ MonoBehaviour:
     color: {r: 1, g: 1, b: 0, a: 1}
     mark: 0
     markColor: {r: 0, g: 0, b: 0, a: 0.5}
-    horizontal: 0
+    horizontal: 0.2
     vertical: 0
     characterSpacing: 0
     size: 0
@@ -413,33 +413,33 @@ MonoBehaviour:
     vertical: 0
     characterSpacing: 0
     size: 0
-  durationFadeIn: 0.25
+  durationFadeIn: 0.2
   enableOffsetFadeIn: 1
   offsetFadeIn: {x: 0.5, y: 0}
   enableScaleFadeIn: 1
-  scaleFadeIn: {x: 2, y: 0.5}
+  scaleFadeIn: {x: 2, y: 2}
   enableCrossScaleFadeIn: 0
   crossScaleFadeIn: {x: 1, y: 1.5}
-  enableShakeFadeIn: 1
-  shakeOffsetFadeIn: {x: 1.5, y: 0}
-  shakeFrequencyFadeIn: 8
+  enableShakeFadeIn: 0
+  shakeOffsetFadeIn: {x: 0, y: 1.5}
+  shakeFrequencyFadeIn: 4
   durationFadeOut: 0.2
-  enableOffsetFadeOut: 0
-  offsetFadeOut: {x: 0.5, y: 0}
-  enableScaleFadeOut: 1
-  scaleFadeOut: {x: 0.5, y: 2}
+  enableOffsetFadeOut: 1
+  offsetFadeOut: {x: 0.4, y: 0}
+  enableScaleFadeOut: 0
+  scaleFadeOut: {x: 2, y: 2}
   enableCrossScaleFadeOut: 0
   crossScaleFadeOut: {x: 1, y: 1.5}
-  enableShakeFadeOut: 1
+  enableShakeFadeOut: 0
   shakeOffsetFadeOut: {x: 0, y: 1.5}
-  shakeFrequencyFadeOut: 2
+  shakeFrequencyFadeOut: 4
   enableLerp: 1
   lerpSettings:
     speed: 5
     minX: -0.4
-    maxX: 4
-    minY: 0.6
-    maxY: 1
+    maxX: 0.4
+    minY: 8
+    maxY: 10
     randomFlip: 0
   enableVelocity: 0
   velocitySettings:
@@ -515,7 +515,7 @@ MonoBehaviour:
     fromNumber: 0
     toNumber: 1000
     fromScale: 1
-    toScale: 2
+    toScale: 1.5
   enableScaleOverTime: 0
   scaleOverTime:
     serializedVersion: 2
@@ -541,7 +541,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  spamGroup: 
+  spamGroup: Default
   enableCombination: 0
   combinationSettings:
     method: 0
@@ -673,10 +673,10 @@ MonoBehaviour:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  enableCollision: 0
+  enableCollision: 1
   collisionSettings:
-    radius: 0.5
-    pushFactor: 1
+    radius: 1
+    pushFactor: 0.5
     desiredDirection: {x: 0, y: 0, z: 0}
   enablePush: 0
   pushSettings:
@@ -713,7 +713,8 @@ MonoBehaviour:
   numberRange: 0
   texts:
   - CRITICAL
-  fonts: []
+  fonts:
+  - {fileID: 11400000, guid: 042cc6b3bab28e143b3e278e2fb63f12, type: 2}
   randomColor: 0
 --- !u!1 &4099347064040355934
 GameObject:
@@ -768,7 +769,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3373603598322536305, guid: cf4f37abd4e7e724da3b2662b9787068, type: 2}
+  - {fileID: 5276284244843499962, guid: 042cc6b3bab28e143b3e278e2fb63f12, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

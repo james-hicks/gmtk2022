@@ -79,7 +79,6 @@ public class RollArea : MonoBehaviour
         {
             _doOnce = true;
             OnCorrectRoll.Invoke();
-            DamageNumber damageNumber = numberDmgPrefab.Spawn(_playerMovement.transform.position, _playerMovement.CurrentSide);
             Debug.Log("YOU GOT THE RIGHT ROLL! :DDDDDDDDDDDDDDDDDDDDD");
         }
     }
