@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Dice")]
     [SerializeField] private DiceSides[] _sides;
-    public int CurrentSide { get; private set; }
+    public int CurrentSide = -1;
     public bool CanRoll { get; set; }
 
 
@@ -85,9 +85,9 @@ public class PlayerMovement : MonoBehaviour
         if (!CanRoll) return;
         Debug.Log("Roll");
         _hasControl = false;
-        _rb.AddForce(Vector3.up * 7000);
-        _rb.AddTorque(Vector3.forward * 2000);
-        _rb.AddTorque(Vector3.right * 2000);
+        _rb.AddForce(Vector3.up * Random.Range(6500f, 7000f));
+        _rb.AddTorque(Vector3.forward * Random.Range(1750f, 2600f));
+        _rb.AddTorque(Vector3.right * Random.Range(1750f, 2600f));
         StartCoroutine(Rolling());
     }
 
